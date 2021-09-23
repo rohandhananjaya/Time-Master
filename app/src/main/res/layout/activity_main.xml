@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroText"
+        android:textColor="#1499dd"
+        android:textSize="70sp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1499dd"
+        android:textColor="@color/white"
+        android:text="@string/btnStartText" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:text="@string/btnResettText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnCountDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/btnNextAct" />
+    </LinearLayout>
+
+</RelativeLayout>
